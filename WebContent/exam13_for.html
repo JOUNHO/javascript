@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<link rel="stylesheet" href="common/bootstrap-4.6.0/css/bootstrap.min.css" >
+	<script src="common/js/jquery-3.5.1.min.js"></script>
+	<script src="common/bootstrap-4.6.0/js/bootstrap.bundle.min.js"></script>
+	<script src="common/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+	
+	<script>
+		const board={bno:1,btile:"오늘은 좋은날", writer:"땡잡아"};
+		for(key in board){
+			let value=board[key];
+			console.log(key, ":",value);
+		}
+		
+		const boards = [
+			{bno:1,btile:"오늘은 좋은날", writer:"땡잡아"},
+			{bno:2,btile:"오늘은 공부하는 날", writer:"댕큐"},
+			{bno:3,btile:"오늘은 과제하는 날", writer:"신난다"}
+		];
+		
+		for(board1 of boards){
+			console.group(board1.bno);
+			for(key in board1){
+				var value=board1[key];
+				console.log(key, ":",value);
+			}
+			console.groupEnd();
+			
+		}
+	</script>
+	
+</head>
+	<body>
+		<div class="card">
+			<div class="card-header">
+				날짜 정보 얻기
+			</div>
+			<div class="card-body">
+				
+			</div>
+		</div>
+	</body>
+</html>
